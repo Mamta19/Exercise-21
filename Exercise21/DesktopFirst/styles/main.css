@@ -1,0 +1,122 @@
+body,
+ul {
+    padding: 0
+}
+
+a,
+nav li {
+    display: inline-block
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0
+}
+
+a {
+    color: #fff;
+    text-decoration: none
+}
+
+.image-gallery li:hover h3,
+a:hover {
+    text-decoration: underline
+}
+
+header {
+    background: #a00
+}
+
+footer {
+    background: #333;
+    clear: both
+}
+
+ul {
+    list-style: none
+}
+
+nav ul {
+    margin: 0;
+    padding: 20px 10px;
+    font-size: 20px
+}
+
+nav li a {
+    padding-right: 20px
+}
+
+footer nav,
+header nav,
+section {
+    width: 960px;
+    margin: 0 auto
+}
+
+.image-gallery li {
+    float: left;
+    text-align: center;
+    width: 25%
+}
+
+.image-gallery li:hover img {
+    border: 2px solid #333;
+    display: block;
+    margin: 0 auto
+}
+
+
+/*my code starts here */
+
+
+/* code for screen-width 960px */
+
+@media screen and (max-width:960px) {
+    .container,
+    section,
+    footer {
+        width: 100%;
+    }
+    /* code for screen-width 620px */
+    @media screen and (max-width:620px) {
+        .container,
+        section,
+        footer,
+        section {
+            width: 100%;
+        }
+    }
+    .image-gallery li {
+        float: left;
+        text-align: center;
+        width: 33%;
+    }
+}
+
+
+/* code for screen-width 480px */
+
+@media screen and (max-width:480px) {
+    .container,
+    section,
+    footer {
+        width: auto;
+    }
+    h1 {
+        margin: 5px;
+    }
+    .image-gallery {
+        width: 100%;
+    }
+    .image-gallery li {
+        width: 50%;
+    }
+    footer nav li,
+    header nav li {
+        display: block;
+        border-bottom: 1px solid white;
+    }
+}
